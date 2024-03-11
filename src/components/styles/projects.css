@@ -1,0 +1,9 @@
+#main-project-div {
+	display: flex;
+  flex-direction: column;
+  height: 200%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(white, white);
+}
