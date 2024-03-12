@@ -1,0 +1,58 @@
+#preload-main {
+  display: flex;
+  height: 100dvh;
+  width: 100%;
+  top: calc(var(--navbar-width) * -1);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 30;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  animation: blurrer 2s var(--pre-delay) steps(1000) forwards;
+}
+
+#preload-left,
+#preload-right {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  animation: pre-left-shift 1s var(--pre-delay) forwards;
+}
+
+#preload-right {
+  background-color: black;
+  animation: pre-right-shift 1s var(--pre-delay) forwards;
+}
+
+@keyframes pre-left-shift {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-101%);
+  }
+}
+
+@keyframes pre-right-shift {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes blurrer {
+  0% {
+    backdrop-filter: blur(8px);
+  }
+
+  100% {
+    backdrop-filter: blur(0);
+    display: none;
+  }
+}

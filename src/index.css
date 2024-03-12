@@ -4,6 +4,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --navbar-width: 8dvh;
+  --pre-delay: 2s;
 }
 
 body {
@@ -18,5 +19,6 @@ body {
 #root {
   width: 100%;
   height: 100%;
+  position: relative;
   z-index: 1;
 }
