@@ -4,21 +4,26 @@ import "./styles/intro.css";
 export default function Intro() {
   function introTyper() {
     const introTextElem = document.querySelector("#back-intro-text");
-    let txt = "FULL STACK DEVELOPER",
-      i = 0,
+    const hobbyArr = ["FULL STACK DEVELOPER", "PHOTOGRAPHER"];
+    let i = 0,
+      j = 0,
       flag = true;
 
     setInterval(() => {
+      if (i == hobbyArr.length) i = 0;
       if (flag) {
-        introTextElem.innerHTML = txt.substring(0, i++);
-        if (i === txt.length) {
+        introTextElem.innerHTML = hobbyArr[i].substring(0, j++);
+        if (j === hobbyArr[i].length) {
           flag = false;
         }
       } else {
-        introTextElem.innerHTML = txt.substring(0, i--);
-        if (i === 0) flag = true;
+        introTextElem.innerHTML = hobbyArr[i].substring(0, j--);
+        if (j === 0) {
+          i++;
+          flag = true;
+        }
       }
-    }, 120);
+    }, 150);
   }
 
   useEffect(() => {
