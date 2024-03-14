@@ -13,37 +13,21 @@
   animation: blurrer 2s var(--pre-delay) steps(1000) forwards;
 }
 
-#preload-left,
-#preload-right {
+#preload-div {
   display: flex;
   height: 100%;
-  width: 50%;
+  width: 100%;
   background-color: black;
-  animation: pre-left-shift 1s var(--pre-delay) forwards;
+  animation: pre-up-shift 1s var(--pre-delay) forwards;
 }
 
-#preload-right {
-  background-color: black;
-  animation: pre-right-shift 1s var(--pre-delay) forwards;
-}
-
-@keyframes pre-left-shift {
+@keyframes pre-up-shift {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   100% {
-    transform: translateX(-101%);
-  }
-}
-
-@keyframes pre-right-shift {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(101%);
+    transform: translateY(-101%);
   }
 }
 
