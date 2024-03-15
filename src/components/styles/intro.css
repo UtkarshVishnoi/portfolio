@@ -30,6 +30,7 @@
   align-items: center;
   background-image: linear-gradient(black, rgb(28, 28, 28));
   scroll-snap-align: center;
+  overflow-x: hidden;
 }
 
 #intro-div {

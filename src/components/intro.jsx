@@ -23,7 +23,7 @@ export default function Intro() {
           flag = true;
         }
       }
-    }, 150);
+    }, 140);
   }
 
   useEffect(() => {

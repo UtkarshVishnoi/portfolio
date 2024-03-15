@@ -4,7 +4,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --navbar-width: 8dvh;
-  --pre-delay: 2s;
+  --pre-delay: 3s;
   --main-back-color: rgb(28, 28, 28);
 }
 
@@ -15,6 +15,8 @@ body {
   padding: 0;
   height: calc(100dvh - var(--navbar-width));
   margin-top: var(--navbar-width);
+  position: relative;
+  z-index: 1;
 }
 
 #root {

@@ -15,10 +15,17 @@
 
 #preload-div {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   background-color: black;
   animation: pre-up-shift 1s var(--pre-delay) forwards;
+}
+
+#preload-image {
+  width: 500px;
+  height: 500px;
 }
 
 @keyframes pre-up-shift {
