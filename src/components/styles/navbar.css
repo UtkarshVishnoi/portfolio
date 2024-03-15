@@ -7,7 +7,6 @@
   background-color: black;
   justify-content: space-between;
   align-items: center;
-  /* border: solid 1px white; */
   z-index: 20;
 }
 
@@ -61,11 +60,16 @@
     width: 100%;
     border: none;
     border-radius: 6px;
+    /* display: none; */
   }
 
   .side-links:hover {
     background-color: rgb(56, 56, 56);
     cursor: pointer;
+  }
+
+  .nav-side-links {
+    display: none;
   }
 
   .nav-side {
