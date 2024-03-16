@@ -10,7 +10,7 @@
   z-index: 30;
   overflow: hidden;
   backdrop-filter: blur(8px);
-  animation: blurrer 2s var(--pre-delay) steps(1000) forwards;
+  animation: blurrer 870ms var(--pre-delay) steps(1000) forwards;
 }
 
 #preload-div {

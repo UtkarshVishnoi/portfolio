@@ -9,6 +9,33 @@
   scroll-snap-align: center;
 }
 
+.contact-details-div,
+.cv-download-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+#cv-download-btn {
+  padding: 2% 5%;
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 10px;
+  color: white;
+  transition: all 250ms;
+}
+
+#cv-download-btn:hover {
+  color: black;
+  background-color: lightgray;
+}
+
+.cv-download-div {
+  height: 10%;
+}
+
 .div-header-text {
   margin: 5% 4%;
 }
