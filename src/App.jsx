@@ -5,6 +5,7 @@ import Projects from "./components/projects.jsx";
 import PreLoad from "./components/preload.jsx";
 import About from "./components/about.jsx";
 import Contact from "./components/contact.jsx";
+import Footer from "./components/footer.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 }

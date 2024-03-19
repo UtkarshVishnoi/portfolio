@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./styles/intro.css";
+import Socials from "./socials";
 
 export default function Intro() {
   function introTyper() {
@@ -48,11 +49,7 @@ export default function Intro() {
           <img src="imgs/user.svg" alt="profile picture" id="intro-dp" />
         </div>
       </div>
-      <div id="social-div">
-        <img src="imgs/github.svg" alt="github" className="social-logo" />
-        <img src="imgs/insta.svg" alt="instagram" className="social-logo" />
-        <img src="imgs/linkedin.svg" alt="linked in" className="social-logo" />
-      </div>
+      <Socials />
     </div>
   );
 }
