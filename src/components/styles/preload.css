@@ -24,8 +24,10 @@
 }
 
 #preload-image {
-  width: 500px;
-  height: 500px;
+  width: 50%;
+  height: 50%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
 @keyframes pre-up-shift {
