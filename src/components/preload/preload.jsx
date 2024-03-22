@@ -1,4 +1,4 @@
-import "./styles/preload.css";
+import "./preload.css";
 
 export default function PreLoad() {
   return (

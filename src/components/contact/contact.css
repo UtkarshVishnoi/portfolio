@@ -30,6 +30,7 @@
 #cv-download-btn:hover {
   color: black;
   background-color: lightgray;
+  cursor: pointer;
 }
 
 .cv-download-div {

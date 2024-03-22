@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import "./styles/intro.css";
-import Socials from "./socials";
+import "./intro.css";
+import Socials from "../socials/socials.jsx";
 
 export default function Intro() {
   function introTyper() {
